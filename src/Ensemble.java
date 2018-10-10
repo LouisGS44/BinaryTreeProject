@@ -2,8 +2,6 @@
 public class Ensemble {
 	
 	public void insert(int x) {
-		System.out.println("test");
-		System.out.println("t");
 		
 	}
 	
