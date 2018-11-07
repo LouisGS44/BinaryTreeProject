@@ -1,6 +1,8 @@
 
 public class Ensemble {
 	
+	
+	
 	public void insert(int x) {
 		
 	}
@@ -11,6 +13,5 @@ public class Ensemble {
 	
 	public boolean contains(int x) {
 		return false;
-		
 	}
 }
