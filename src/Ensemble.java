@@ -6,7 +6,7 @@ public class Ensemble {
 	}
 	
 	public void delete(int x) {
-		
+		System.out.println("test");
 	}
 	
 	public boolean contains(int x) {
