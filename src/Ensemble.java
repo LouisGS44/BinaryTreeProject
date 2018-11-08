@@ -1,10 +1,14 @@
 
 public class Ensemble {
-    private Node valeur;
+    private int valeur;
+    private Ensemble gauche;
+    private Ensemble droite;
 
    // CONSTRUCTEURS
-    public Ensemble(int x) {
-        valeur.valeur = x;
+    public Ensemble(int x, Ensemble g, Ensemble d) {
+        valeur = x;
+        this.gauche = g;
+        this.droite = d;
     }
 
     public Ensemble(int x) {
@@ -21,14 +25,4 @@ public class Ensemble {
 		return false;
 	}
 
-	class Node{
-        int valeur;
-        Node gauche;
-        Node droit;
-
-        public Node(){
-
-        }
-
-    }
 }
