@@ -38,12 +38,42 @@ public class Ensemble {
 
 	}
 
-	public void delete(int x) {	
-		System.out.println("test");
+	public void delete(int x) {
+
+        if(x <= this.valeur){
+
+            //Ajout gauche
+            if(this.gauche != null){
+                this.gauche.delete(x);
+            } else {
+                this.gauche = null;
+            }
+
+        } else {
+
+            //Ajout droit
+            if(this.droite != null){
+                this.droite.delete(x);
+            } else {
+                this.droite = null;
+            }
+
+        }
 	}
 
 	public boolean contains(int x) {
-		return false;
+
+        if (x == this.valeur){return true;}
+
+        if(x < this.valeur){
+
+            return gauche.contains(x);
+
+        } else {
+
+            return droite.contains(x);
+
+        }
 	}
 
 }
