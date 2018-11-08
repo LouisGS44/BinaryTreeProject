@@ -1,7 +1,7 @@
 
 public class Ensemble {
     private int valeur;
-    private Ensemble gauche, droit;   
+    private Ensemble gauche, droite;   
 
    // CONSTRUCTEURS
     public Ensemble(int x) {
@@ -11,12 +11,30 @@ public class Ensemble {
     public Ensemble(int x, Ensemble g, Ensemble d) {
         valeur = x;
         gauche = g;
-        droit = d;
-    } 
-	
-	
-	
+        droite = d;
+    }
+
 	public void insert(int x) {
+
+        if(x <= this.valeur){
+
+            //Parcours gauche
+            if(this.gauche != null){
+                this.gauche.insert(x);
+            } else {
+                this.gauche = new Ensemble(x);
+            }
+
+        } else {
+
+            //Parcours droit
+            if(this.droite != null){
+                this.droite.insert(x);
+            } else {
+                this.droite = new Ensemble(x);
+            }
+
+        }
 
 	}
 	public void delete(int x) {	
@@ -26,14 +44,4 @@ public class Ensemble {
 		return false;
 	}
 
-	class Node{
-        int valeur;
-        Node gauche;
-        Node droit;
-
-        public Node(){
-
-        }
-
-    }
 }
