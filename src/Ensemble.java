@@ -14,7 +14,8 @@ public class Ensemble {
         droit = d;
     } 
 	
-	public void insert(int x) {	
+	public void insert(int x) {
+
 	}
 	public void delete(int x) {	
 		System.out.println("test");
@@ -22,4 +23,16 @@ public class Ensemble {
 	public boolean contains(int x) {
 		return false;
 	}
+
+	class Node{
+        int valeur;
+        Node gauche;
+        Node droit;
+
+        public Node(){
+
+        }
+
+    }
+
 }
