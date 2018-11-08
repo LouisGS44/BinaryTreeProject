@@ -1,5 +1,6 @@
 
 public class Ensemble {
+
     private int valeur;
     private Ensemble gauche;
     private Ensemble droite;
@@ -17,7 +18,7 @@ public class Ensemble {
 
         if(x <= this.valeur){
 
-            //Parcours gauche
+            //Ajout gauche
             if(this.gauche != null){
                 this.gauche.insert(x);
             } else {
@@ -26,7 +27,7 @@ public class Ensemble {
 
         } else {
 
-            //Parcours droit
+            //Ajout droit
             if(this.droite != null){
                 this.droite.insert(x);
             } else {
@@ -36,9 +37,11 @@ public class Ensemble {
         }
 
 	}
+
 	public void delete(int x) {	
 		System.out.println("test");
 	}
+
 	public boolean contains(int x) {
 		return false;
 	}
