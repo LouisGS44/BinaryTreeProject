@@ -10,6 +10,6 @@ public class Ensemble {
 	}
 	
 	public boolean contains(int x) {
-		return false;
+	    return false;
 	}
 }
