@@ -24,6 +24,7 @@ public class Ensemble {
             } else {
                 this.gauche = new Ensemble(x);
             }
+            System.out.println(this.gauche);
 
         } else {
 
@@ -33,15 +34,18 @@ public class Ensemble {
             } else {
                 this.droite = new Ensemble(x);
             }
-
-        }
-
+            System.out.println(this.droite);
+        }       
 	}
 	public void delete(int x) {	
 		System.out.println("test");
 	}
 	public boolean contains(int x) {
 		return false;
+	}
+	
+	public String toString() {
+		return "" + this.valeur;
 	}
 
 }
