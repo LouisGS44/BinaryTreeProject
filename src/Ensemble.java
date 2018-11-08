@@ -1,17 +1,14 @@
 
 public class Ensemble {
-    private int valeur;
-    private Ensemble gauche, droit;   
+    private Node valeur;
 
    // CONSTRUCTEURS
     public Ensemble(int x) {
-        valeur = x;
+        valeur.valeur = x;
     }
 
-    public Ensemble(int x, Ensemble g, Ensemble d) {
+    public Ensemble(int x) {
         valeur = x;
-        gauche = g;
-        droit = d;
     } 
 	
 	
